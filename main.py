@@ -25,7 +25,7 @@ if __name__ == '__main__':
   if frameNumber > videoLength:
     raise Exception('requested frame is longer than video.')
 
-  # 2 is the prop for frame position in cv2
+  # 1 is the prop for frame position in cv2 in python 3
   video.set(1, frameNumber)
   success, image = video.read()
 
